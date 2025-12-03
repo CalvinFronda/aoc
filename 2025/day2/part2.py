@@ -1,7 +1,6 @@
 f = open("./input.txt")
 
 """
-
 seperate ids by ,
 ranges so 11 - 22,
 11,12,13,14,15,16...20,21,22
