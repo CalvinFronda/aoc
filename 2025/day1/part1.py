@@ -16,13 +16,14 @@ def solution():
         step = int(s[1:])
 
         if dir == "L":
-            if curr_idx - step < 0:
-                zero_count += 1
             curr_idx = move(curr_idx, -step)
-        else:
-            if curr_idx + step >= 100:
+            if curr_idx == 0:
                 zero_count += 1
+        else:
             curr_idx = move(curr_idx, step)
+            if curr_idx == 0:
+                zero_count += 1
+
     return zero_count
 
 

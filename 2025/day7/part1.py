@@ -10,12 +10,10 @@ cols = len(grid[0])
 
 
 def solution():
-    for row in range(rows):
-        for col in range(cols):
-            if grid[row][col] == "S":
-                sr, sc = row, col
-
+    sr = 0
+    sc = grid[sr].index("S")
     que = deque([(sr, sc)])
+
     count = 0
     seen = set()
     while que:
